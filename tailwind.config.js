@@ -10,6 +10,10 @@ module.exports = {
       "primary-orange": "#ffba08",
       "primary-yellow": "#fca311",
     },
+    fontFamily: {
+      hand: ["Gochi Hand", "cursive"],
+      poppins: ["Poppins", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
