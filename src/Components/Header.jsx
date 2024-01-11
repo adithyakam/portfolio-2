@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <div className=" border-b-2 border-b-primary-dark-text sticky p-2">
-      <div className="flex justify-between items-center sm:w-[90%] sm:py-0 w-[80%] mx-auto py-2">
+      <div className="flex justify-between items-center sm:w-[90%] sm:py-0 w-[80%] mx-auto py-2 sticky">
         <div className="w-[30%}">
           <h1 className="text-xl font-bold cursor-pointer font-hand">
             Adithya
@@ -22,7 +22,7 @@ const Header = () => {
           <div className=" hidden lg:flex lg:justify-around ">
             {routes.map((ele) => {
               return (
-                <div className="flex">
+                <div className="flex" key={ele.title}>
                   {/* <img alt={ele.title} /> */}
                   <h3 className="text font-semibold cursor-pointer font-hand">
                     {ele.title}

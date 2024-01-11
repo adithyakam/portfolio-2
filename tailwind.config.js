@@ -15,6 +15,16 @@ module.exports = {
       poppins: ["Poppins", "sans-serif"],
     },
     extend: {},
+    safelist: [
+      "top-[10%]",
+      "left-[10%]",
+      "top-[20%]",
+      "left-[20%]",
+      "top-[30%]",
+      "left-[30%]",
+      "top-[80%]",
+      "left-[80%]",
+    ],
   },
   plugins: [],
 };
