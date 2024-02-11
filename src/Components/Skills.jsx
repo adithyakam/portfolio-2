@@ -5,7 +5,10 @@ import SkillBubble from "./SkillBubble";
 
 const Skills = () => {
   return (
-    <div className=" relative flex flex-col items-center   sm:w-[90%]  w-[80%] mx-auto lg:py-2 h-screen">
+    <div
+      id="skills"
+      className=" relative flex flex-col items-center   sm:w-[90%]  w-[80%] mx-auto lg:py-12 h-screen "
+    >
       <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide	">
         SKILLS
       </h2>

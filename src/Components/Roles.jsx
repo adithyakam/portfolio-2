@@ -11,7 +11,7 @@ const Roles = ({ roles }) => {
   };
 
   return (
-    <div className="ml-14 border-l-2 border-l-primary-dark-text m-4 p-2">
+    <div className="ml-14 border-l-2 border-l-primary-dark-text m-4 p-2 w-screen">
       <div
         className="flex justify-between items-center md:w-[15%] lg:w-[20%]"
         onClick={onCollapse}

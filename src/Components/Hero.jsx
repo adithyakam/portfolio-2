@@ -6,7 +6,10 @@ const Hero = () => {
   const { title, description, exp, desc2, boldsec, rest } = heroDetails;
 
   return (
-    <div className="flex flex-col p-4 lg:flex-row  lg:justify-around lg:items-center sm:w-[90%]  w-[80%] mx-auto lg:py-2 h-screen self-center">
+    <div
+      id="home"
+      className="flex flex-col p-4 lg:flex-row  lg:justify-around lg:items-center sm:w-[90%]  w-[80%] mx-auto lg:py-2 h-screen self-center "
+    >
       <div className="w-full lg:w-[30%] ">
         <img src={avatar} alt="profile pic" className="lg:h-30 my-2 " />
       </div>

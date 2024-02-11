@@ -1,17 +1,22 @@
 export const routes = [
   {
     title: "Skills",
-    href: "#",
+    href: "#skills",
     Icon: "",
   },
   {
     title: "Experiance",
-    href: "#",
+    href: "#experiance",
+    Icon: "",
+  },
+  {
+    title: "Projects",
+    href: "#project",
     Icon: "",
   },
   {
     title: "Contact",
-    href: "#",
+    href: "#contact",
     Icon: "",
   },
 ];

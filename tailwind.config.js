@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       "primary-text": "#242423",
-      "primary-bg": "#dee2e6",
+      "primary-bg": "#fcfcfc",
       "primary-dark-text": "#343a40",
       "primary-dark-bg": "#212529",
       "primary-orange": "#ffba08",
