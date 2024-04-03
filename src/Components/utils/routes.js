@@ -1,9 +1,14 @@
 export const routes = [
   {
-    title: "Skills",
-    href: "#skills",
+    title: "About Me",
+    href: "#about",
     Icon: "",
   },
+  // {
+  //   title: "Skills",
+  //   href: "#skills",
+  //   Icon: "",
+  // },
   {
     title: "Experiance",
     href: "#experiance",
@@ -18,5 +23,10 @@ export const routes = [
     title: "Contact",
     href: "#contact",
     Icon: "",
+  },
+  {
+    title: "Resume",
+    href: "https://portfolio-assts.s3.ap-south-1.amazonaws.com/resume.pdf",
+    resume: true,
   },
 ];

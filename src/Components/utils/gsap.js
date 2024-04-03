@@ -1,9 +1,7 @@
-// const container = useRef();
+import gsap from "gsap"; // <-- import GSAP
+import { useGSAP } from "@gsap/react";
 
-// useGSAP(
-//   () => {
-//     // gsap code here...
-//     gsap.to(".box", { x: endX }); // <-- automatically reverted
-//   },
-//   { scope: container }
-// );
+export const gsapApp = gsap.registerPlugin(useGSAP);
+export const tl = gsap.timeline();
+
+export default gsap;
