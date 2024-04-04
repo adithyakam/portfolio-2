@@ -20,7 +20,7 @@ const Welcome = () => {
       gsap.from(
         "#welcome-tag",
         {
-          yPercent: -1000,
+          // yPercent: -1000,
           stagger: 0.1,
 
           opacity: 0,
@@ -30,7 +30,7 @@ const Welcome = () => {
       gsap.to(
         "#welcome-tag",
         {
-          yPercent: -1000,
+          yPercent: -500,
           stagger: 0.1,
           opacity: 1,
         },
@@ -50,7 +50,7 @@ const Welcome = () => {
   return (
     <div
       ref={container}
-      className="bg-primary-bg text-primary-text w-screen h-screen font-poppins p-10 overflow-hidden"
+      className="relative bg-primary-bg text-primary-text w-screen h-screen font-poppins p-10 overflow-hidden"
     >
       <div
         id="welcome"
@@ -58,14 +58,14 @@ const Welcome = () => {
       >
         Welcome
       </div>
-      <div className=" z-0">
-        <h1 id="welcome-tag" className="text-4xl my-4  ">
+      <div className="absolute bottom-0 left-0 z-0">
+        <h1 id="welcome-tag" className="text-2xl md:text-4xl my-4  ">
           Frontend Developer
         </h1>
-        <h1 id="welcome-tag" className="text-4xl my-4 ">
+        <h1 id="welcome-tag" className="text-2xl md:text-4xl my-4 ">
           React Developer
         </h1>
-        <h1 id="welcome-tag" className="text-4xl my-4 ">
+        <h1 id="welcome-tag" className="text-2xl md:text-4xl my-4 ">
           Devops Engineer
         </h1>
       </div>

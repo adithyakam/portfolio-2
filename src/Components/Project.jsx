@@ -11,7 +11,9 @@ const Project = ({ project }) => {
         />
       </div>
       <div className=" flex flex-col p-2">
-        <h1 className="font-bold text-sm md:text-base">{project.name}</h1>
+        <h1 className="font-bold text-sm md:text-base text-primary-white">
+          {project.name}
+        </h1>
         <h3 className="font-bold text-[6px] lg:text-[10px] mt-1">
           {project.tech.split(",").map((tech, index) => (
             <span key={index} className="mr-1 whitespace-break-spaces">
@@ -28,7 +30,7 @@ const Project = ({ project }) => {
               onClick={() => {
                 window.open(index === 0 ? project.live : project.git, "_blank");
               }}
-              className="p-1 mx-1 text-xs md:text-sm md:p-2 tracking-wide font-bold border rounded-xl border-primary-dark-text hover:bg-primary-dark-text hover:text-primary-bg"
+              className="p-1 text-primary-white mx-1 text-xs md:text-sm md:p-2 tracking-wide font-bold border rounded-xl border-primary-dark-text hover:bg-primary-dark-text hover:text-primary-bg"
             >
               {buttonLabel}
             </button>

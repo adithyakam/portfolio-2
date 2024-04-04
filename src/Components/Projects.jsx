@@ -14,7 +14,7 @@ const Projects = () => {
             id="project"
             className=" relative flex flex-col items-center w-full  md:w-[80%] mx-auto lg:py-12 h-screen   p-4"
           >
-            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide 	">
+            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide text-primary-white	">
               PROJECTS
             </h2>
             <div className="relative w-[95%] md:w-[90%] flex md:flex-nowrap items-center h-full  no-scrollbar  md:p-2 flex-row  overflow-x-scroll md:mt-6">

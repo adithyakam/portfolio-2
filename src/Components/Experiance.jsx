@@ -26,7 +26,7 @@ const Experiance = () => {
             id="exp-comp"
             className=" relative flex flex-col items-center w-full lg:w-[80%] mx-auto lg:py-12  "
           >
-            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide 	">
+            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide text-primary-white	">
               EXPERIANCE
             </h2>
             <div className="w-full ">

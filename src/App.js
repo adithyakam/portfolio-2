@@ -11,9 +11,11 @@ import Welcome from "./Components/Welcome";
 
 import About from "./Components/About";
 import { Suspense, useEffect, useRef, useState } from "react";
+import SideMenu from "./Components/SideMenu";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [sideMenu, setsideMenu] = useState(false);
 
   useEffect(() => {
     // Simulate loading delay using setTimeout
@@ -24,16 +26,23 @@ function App() {
     return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
 
+  const isSideMenu = () => {
+    setsideMenu(!sideMenu);
+  };
+
   const createBrowserRoute = createBrowserRouter([
     {
       path: "/",
       element: (
         <div className="bg-primary-bg text-primary-text font-poppins ">
-          <Header />
+          <Header isSideMenu={isSideMenu} sideMenu={sideMenu} />
           <Hero />
           <About />
           {/* <Skills /> */}
           <Experiance />
+          {sideMenu ? (
+            <SideMenu isSideMenu={isSideMenu} sideMenu={sideMenu} />
+          ) : null}
           <Projects />
           <ContactForm />
         </div>

@@ -18,12 +18,12 @@ const About = () => {
             id="home"
             className="about relative flex flex-col items-center w-full md:w-[80%] mx-auto lg:py-12 h-screen"
           >
-            <h2 className="text-base lg:text-3xl font-bold font-poppins tracking-wide">
+            <h2 className="text-base lg:text-3xl font-bold font-poppins tracking-wide text-primary-white">
               About ME
             </h2>
-            <div className="flex flex-col p-4 lg:flex-row lg:justify-around lg:items-center w-full md:w-[80%] mx-auto lg:py-2 h-screen self-center">
+            <div className="flex flex-col my-4 p-4 lg:flex-row lg:justify-around lg:items-start w-full md:w-[80%] mx-auto lg:py-2 h-screen self-center">
               <div className="w-full lg:w-[30%] flex flex-col items-center">
-                <h2 className="text-primary-light-text text-base font-semibold">
+                <h2 className="text-primary-white text-base font-semibold">
                   Skills
                 </h2>
                 <div className="flex flex-wrap mt-2">
@@ -39,8 +39,8 @@ const About = () => {
                   })}
                 </div>
               </div>
-              <div className="w-full mt-2 md:py-4 flex lg:w-[50%] flex-col justify-center lg:p-5">
-                <h2 className="text-xs  md:text-base my-2 lg:mx-auto font-poppins lg:text-base font-semibold">
+              <div className="w-full   flex lg:w-[50%] flex-col justify-center ">
+                <h2 className="text-xs   md:text-base  lg:mx-auto font-poppins lg:text-base font-semibold text-primary-white">
                   {title} {name}
                 </h2>
                 <p className="font-poppins text-xs md:text-sm lg:text-base">

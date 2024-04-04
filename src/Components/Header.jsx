@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-import hamburger from "../assets/hamvurger-lightmode.svg";
+// import hamburger from "../assets/hamvurger-lightmode.svg";
+import hamburger from "../assets/hamburger-darkmode.svg";
+
 import { routes } from "./utils/routes";
 
 import gsap, { gsapApp, tl } from "../Components/utils/gsap";
@@ -7,8 +9,7 @@ import { useGSAP } from "@gsap/react";
 
 import SideMenu from "../Components/SideMenu";
 
-const Header = () => {
-  const [sideMenu, setsideMenu] = useState(false);
+const Header = ({ isSideMenu, sideMenu }) => {
   const header = useRef();
   useGSAP(
     () => {
@@ -29,10 +30,7 @@ const Header = () => {
       scope: header,
     }
   );
-
-  const isSideMenu = () => {
-    setsideMenu(!sideMenu);
-  };
+  console.log(sideMenu);
 
   return (
     <div
@@ -43,19 +41,19 @@ const Header = () => {
         <div className="w-[30%}">
           <h1
             id="menuitems"
-            className="text-xl font-bold cursor-pointer font-poppins"
+            className="text-xl font-bold cursor-pointer font-poppins text-primary-light-text"
           >
             Adithya
           </h1>
         </div>
         <div className="w-[20%] md:w-[30%] lg:[50%]">
-          <img
-            src={hamburger}
-            className="sm:p-0 sm:m-0 sm:block lg:hidden md:block"
-            onClick={isSideMenu}
-          />
-          {sideMenu ? <SideMenu /> : null}
-
+          {!sideMenu && (
+            <img
+              src={hamburger}
+              className="sm:p-0 sm:m-0 sm:block lg:hidden md:block "
+              onClick={isSideMenu}
+            />
+          )}
           <div className=" hidden lg:flex lg:justify-around  items-center">
             {routes.map((ele) => {
               return (
@@ -65,9 +63,10 @@ const Header = () => {
                     <a
                       id="menuitems"
                       href={ele.href}
-                      className="text-sm text-nowrap font-semibold cursor-pointer font-poppins lg:mx-2"
+                      className="group relative text-sm text-nowrap font-semibold cursor-pointer font-poppins lg:mx-2 hover:text-primary-light-text"
                     >
                       {ele.title}
+                      <span className="absolute -bottom-1 left-0 w-0 h-[0.8px] bg-primary-orange transition-all group-hover:w-full"></span>
                     </a>
                   ) : (
                     <button

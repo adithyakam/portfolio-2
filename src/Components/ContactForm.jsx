@@ -13,7 +13,7 @@ const ContactForm = () => {
             id="contact"
             className=" relative flex flex-col items-center  sm:w-[90%]  w-[80%] mx-auto lg:py-12 h-screen mt-5 md:mt-0 "
           >
-            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide 	">
+            <h2 className="text-base lg:text-3xl font-bold font-hand tracking-wide 	text-primary-white">
               Contact Details
             </h2>
             <div className=" flex flex-col items-center md:flex-row">
